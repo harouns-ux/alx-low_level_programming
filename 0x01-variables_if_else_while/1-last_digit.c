@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - prints if the number is positive, negative or 0
+ * main - Entry Point
  *
  * Return: Always 0 (Success)
  *
@@ -30,4 +30,5 @@ int main(void)
 		printf("%d and is 0\n", num);
 	}
 	return (0);
+
 }
