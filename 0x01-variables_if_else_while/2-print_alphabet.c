@@ -2,13 +2,14 @@
 
 
 /**
- * main - Entry Point
+ * main -Entry Point
  *
  * Retun: Always 0 (Success)
  *
  */
 
 int main(void)
+
 {
 	char c;
 
