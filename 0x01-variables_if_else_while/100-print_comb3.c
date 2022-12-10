@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - main block
@@ -6,25 +7,31 @@
  * Return: Always 0 (Success)
  */
 
+
 int main(void)
 {
-	int n;
-	int i = 0;
+	int c;
+	int d = 0;
 
-	for (n = 0 ; n < 100 ; n++)
+	while (d < 10)
 	{
-		putchar(n / 10 + '0');
-		putchar(i + '0');
-		if (n < 89)
+		c = 0;
+		while (c < 10)
 		{
-			putchar(',');
-			putchar(32);
+			if (d != c && d < c)
+			{
+				putchar('0' + d);
+				putchar('0' + c);
+
+				if (c + d != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			c++;
 		}
-		i++;
-		if (i > 9)
-		{
-			i = 0;
-		}
+		d++;
 	}
 	putchar('\n');
 	return (0);
