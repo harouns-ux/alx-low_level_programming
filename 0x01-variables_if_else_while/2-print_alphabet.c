@@ -1,24 +1,20 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 
 /**
- * main -Entry Point
+ * main - returns alphabets
  *
- * Retun: Always 0 (Success)
- *
+ * Return: Always 0 (Success)
  */
-
 int main(void)
-
 {
-	char c;
+	char c = 'a';
 
-	c = 'a';
-	while
-		(c <= 'z') {
-			putchar(c);
-			c++;
-		}
-	putchar('\n');
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+	putchar("\n");
 	return (0);
 }
