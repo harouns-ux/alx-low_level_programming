@@ -2,28 +2,28 @@
 #include <stdlib.h>
 
 /**
- * main - main block
+ * main -return a combination of number
  *
- * Return: Always 0 (Success)
+ * Return: return 0 if successful
  */
 
 int main(void)
 {
-	int l, j;
+	int i, j;
 
-	for (l = 0; l < 100; l++)
+	for (i = 0; i < 100; i++)
 	{
 		for (j = 0; j < 100; j++)
 		{
-			if (l < j)
+			if (i < j)
 			{
-				putchar((l / 10) + 48);
-				putchar((l % 10) + 48);
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
 				putchar(' ');
 				putchar((j / 10) + 48);
 				putchar((j % 10) + 48);
 				
-				if (l != 98 || j != 99);
+				if (i != 98 || j != 99);
 			}
 					putchar(',');
 					putchar(' ');
@@ -32,5 +32,12 @@ int main(void)
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
+
+
+
+
+
+
